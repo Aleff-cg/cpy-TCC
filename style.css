@@ -15,6 +15,7 @@
 
          html{
             overflow-x: hidden;
+            scroll-behavior: smooth;
          }
          
          h1{
@@ -65,7 +66,7 @@
 
          #div-alerts{
             padding: 5%;
-            background: linear-gradient(270deg, #ff6b6b, #f0de16, #e5e9e1, #50e3c2, #4a90e2, #9013fe, #d0021b);
+            background: linear-gradient(270deg, #55e2ff, #2424ff);
             background-size: 1400% 1400%;
             animation: gradientAnimation 30s ease infinite;
          }
@@ -83,7 +84,7 @@
          }
 
          .carousel-inner img {
-            height: 600px; /* Ajuste este valor conforme necessário */
+            height: 900px; /* Ajuste este valor conforme necessário */
             border-bottom: 5px solid #f0de16;
         }
 
@@ -129,6 +130,7 @@
             display: block;
           }
 
+         
          
          
 
