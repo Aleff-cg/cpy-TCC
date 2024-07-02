@@ -12,6 +12,10 @@ body, html{
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar{
     display: none;
 }
@@ -119,6 +123,8 @@ h1{
     transition: ease;
     transition-duration: 0.5s;
     z-index: 9;
+ 
+
 }
 
 
@@ -159,6 +165,7 @@ h5{
 .card-title{
     color: #000;
 }
+
 
 
 
