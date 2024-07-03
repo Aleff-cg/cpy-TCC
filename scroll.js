@@ -54,3 +54,32 @@ sr.reveal('#card-3', {
     mobile: true
 });
 
+sr.reveal('.bg-secondary', {
+    delay: 500,
+    duration: 500,
+    origin:'bottom',
+    distance: '25px',
+    reset: true,
+    mobile: true
+    
+})
+
+sr.reveal('.logo-references',{
+    delay: 600,
+    duration: 500,
+    origin:'bottom',
+    distance: '25px',
+    reset: true,    
+    mobile: true
+
+})
+
+sr.reveal('#text-references',{
+    delay: 700,
+    duration: 500,
+    origin:'bottom',
+    distance: '25px',
+    reset: true,
+    mobile: true
+    
+})
