@@ -150,7 +150,7 @@
 
     <footer class="" id="rodape">
         <div class="d-flex justify-content-around">
-            <img src="imgs/logo-asn.png" class="d-inline" alt="" width="80px">
+            <img src="./logo-asn.png" class="d-inline" alt="" width="80px">
             <div class="d-flex flex-column">
                 <h5>Empresarial</h5>
                     <a href="#">Link1</a>
@@ -173,26 +173,6 @@
 
     </footer>
 
-    <script>
-        // Função para ajustar o tamanho dos cards conforme o scroll
-        function adjustCardSize() {
-            const cards = document.querySelectorAll('.reference-card');
-            cards.forEach(card => {
-                const rect = card.getBoundingClientRect();
-                const windowHeight = window.innerHeight;
-                // Verifica se o card está visível na janela
-                if (rect.top < windowHeight && rect.bottom >= 0) {
-                    card.classList.remove('small-card');
-                } else {
-                    card.classList.add('small-card');
-                }
-            });
-        }
-    
-        // Chama a função de ajuste quando a página é carregada e quando houver scroll
-        document.addEventListener('DOMContentLoaded', adjustCardSize);
-        window.addEventListener('scroll', adjustCardSize);
-    </script>
 
     <script>
         // Detecta o início do toque
