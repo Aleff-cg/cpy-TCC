@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./srcs/about.css">
     <style>
         #gradient {
             position: relative; /* Adiciona posição relativa ao container pai */
@@ -26,124 +26,111 @@
     <title>Document</title>
 </head>
 <body class="">
-    <nav class="navbar navbar-expand-lg ">
-        <div>
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <img src="./logo-asn.png" width="50px" alt="">
-          </button>
-          <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <img src="./logo-asn.png" alt="" width="65px" class="logo-navbar">
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bolder mx-2 text-white text-decoration-none " aria-current="page" href="./index.html" id="ele">VOLTAR</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bolder mx-2 text-white text-decoration-none " aria-current="page" href="./eletivas.html" id="ele">ELETIVAS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bolder text-white mx-2 text-decoration-none" aria-current="page" id="tutoria" href="./tutoria.html">TUTORIA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bolder text-decoration-underline text-warning mx-2" aria-current="page" id="sobre" href="#">SOBRE</a>
-              </li>
-            </ul>
-          </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./imgs/logo-asn.png" width="50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">VOLTAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ELETIVAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TUTORIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="./about.html">SOBRE</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container py-5">
         <div class="row">
-          <div class="col text-center">
-            <div class="d-flex justify-content-center p-5" id="gradient">
-              <h1 id="hidden-title">A ESCOLA COM <br> FOCO CONSTANTE NA <br> <span style="color:rgb(245, 209, 31);">EDUCAÇÃO</span></h1>
-                <img src="./logo-asn.png" id="logo" style="cursor: pointer;">
+            <div class="col text-center">
+                <div class="d-flex justify-content-center p-5" id="gradient">
+                    <h1 id="hidden-title">A ESCOLA COM <br> FOCO CONSTANTE NA <br> <span style="color:rgb(245, 209, 31);">EDUCAÇÃO</span></h1>
+                    <img src="./imgs/logo-asn.png" id="logo" style="cursor: pointer;">
+                </div>
             </div>
-          </div>
+        </div>
+
+        <h1 class="text-center pt-5" id="text-objective">OBJETIVOS:</h1>
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="col-md-4">
+            <div class="bg-primary text-white p-3 rounded-3">
+                <h3 class="text-center">OBJETIVO</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at auctor lectus, id sagittis felis. Sed ac risus vel neque efficitur scelerisque. Suspendisse ut molestie mi.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="bg-primary text-white p-3 rounded-3">
+                <h3 class="text-center">MISSÃO</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at auctor lectus, id sagittis felis. Sed ac risus vel neque efficitur scelerisque. Suspendisse ut molestie mi.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="bg-primary text-white p-3 rounded-3">
+                <h3 class="text-center">VALORES</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at auctor lectus, id sagittis felis. Sed ac risus vel neque efficitur scelerisque. Suspendisse ut molestie mi.</p>
+            </div>
         </div>
     </div>
+</div>
 
-    <h1 class="text-center pt-5 " id="text-objective">OBJETIVOS:</h1>
-    <div class="d-flex flex-row justify-content-around objective">
-        <div class="d-flex bg-secondary p-3 flex-column align-items-center rounded-3">
-          <h3>OBJETIVO:</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at auctor lectus,<br>
-             id sagittis felis. Sed ac risus vel neque efficitur scelerisque. Suspendisse ut <br>
-              molestie mi. Phasellus eu tellus imperdiet, suscipit turpis eget, bibendum sem. In eu <br>
-               ligula nec purus pellentesque egestas ut in lacus. Sed interdum eu nisl eu placerat. <br>
-               Donec efficitur placerat elit, ac lacinia orci luctus vel. In dapibus vulputate arcu <br>
-               quis rhoncus.</p>
-        </div>
-      
-        <div class="d-flex bg-secondary p-3 flex-column align-items-center rounded-3 mission">
-
-          <h3>MISSÃO:</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at auctor lectus,<br>
-             id sagittis felis. Sed ac risus vel neque efficitur scelerisque. Suspendisse ut <br>
-              molestie mi. Phasellus eu tellus imperdiet, suscipit turpis eget, bibendum sem. In eu <br>
-               ligula nec purus pellentesque egestas ut in lacus. Sed interdum eu nisl eu placerat. <br>
-               Donec efficitur placerat elit, ac lacinia orci luctus vel. In dapibus vulputate arcu <br>
-               quis rhoncus.</p>
-        </div>
-        <div class="d-flex bg-secondary p-3 flex-column align-items-center rounded-3 values">
-          <h3>VALORES:</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at auctor lectus,<br>
-             id sagittis felis. Sed ac risus vel neque efficitur scelerisque. Suspendisse ut <br>
-              molestie mi. Phasellus eu tellus imperdiet, suscipit turpis eget, bibendum sem. In eu <br>
-               ligula nec purus pellentesque egestas ut in lacus. Sed interdum eu nisl eu placerat. <br>
-               Donec efficitur placerat elit, ac lacinia orci luctus vel. In dapibus vulputate arcu <br>
-               quis rhoncus.</p>
-        </div>
-      </div>
-
-      <div class="importante d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <div>
-            <h2 class="history"><strong>NOSSA HISTÓRIA</strong></h2>
-            <p class="text-importante"> <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec justo rhoncus, 
-              suscipit arcu eget, viverra ex. Cras eu massa lobortis, luctus turpis sit amet, sagittis turpis. Sed cursus tempor nisi, e
-              t accumsan tortor placerat vitae. Duis erat ante, rhoncus sit amet aliquam eget, malesuada id neque. Maecenas vestibulum 
-              lacus non pretium posuere. Proin et tempor lorem, et luctus urna. Donec dui orci, aliquam ac elementum sit amet, eleifend vel 
-              diam. Ut porttitor massa quis ultrices faucibus. Sed et justo eu felis tincidunt convallis sit amet eu metus. Maecenas a finibus 
-              dui, et posuere magna. Nam condimentum metus eu lectus ultricies varius sed eu massa.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec justo rhoncus, suscipit arcu eget, viverra ex. Cras eu 
-              massa lobortis, luctus turpis sit amet, sagittis turpis. Sed cursus tempor nisi, et accumsan tortor placerat vitae. Duis era
-              lacus non pretium posuere. Proin et tempor lorem, et luctus urna. Donec dui orci, aliquam ac elementum sit amet, eleifend vel 
-              diam. Ut porttitor massa quis ultrices faucibus. Sed et justo eu felis tincidunt convallis sit amet eu metus. Maecenas a finibus 
-              dui, et posuere magna. Nam condimentum metus eu lectus ultricies varius sed eu massa.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec justo rhoncus, suscipit arcu eget, viverra ex. Cras eu 
-              massa lobortis, luctus turpis sit amet, sagittis turpis. Sed cursus tempor nisi, et accumsan tortor placerat vitae. Duis era</p>
+        <div class="importante d-flex flex-column flex-md-row justify-content-between align-items-center mt-5">
+            <div>
+                <h2 class="history"><strong>NOSSA HISTÓRIA</strong></h2>
+                <p class="text-importante">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec justo rhoncus,
+                     suscipit arcu eget, viverra ex. Cras eu massa lobortis, luctus turpis sit amet, sagittis turpis.
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec justo rhoncus,
+                     suscipit arcu eget, viverra ex. Cras eu massa lobortis, luctus turpis sit amet, sagittis turpis.
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec justo rhoncus,
+                     suscipit arcu eget, viverra ex. Cras eu massa lobortis, luctus turpis sit amet, sagittis turpis.
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec justo rhoncus,
+                     suscipit arcu eget, viverra ex. Cras eu massa lobortis, luctus turpis sit amet, sagittis turpis.
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec justo rhoncus,
+                     suscipit arcu eget, viverra ex. Cras eu massa lobortis, luctus turpis sit amet, sagittis turpis.</p>
             </div>
-        <img src="./Albert-Einstein-PNG-HD-Image.png" class=" albert d-none d-md-block" alt="" width="500px">
+            <img src="./imgs/Albert-Einstein-PNG-HD-Image.png" class="albert d-none d-md-block" alt="" width="500">
+        </div>
     </div>
 
     <footer class="" id="rodape">
-      <div class="d-flex justify-content-around">
-          <img src="./logo-asn.png" class="d-inline" alt="" width="80px">
-          <div class="d-flex flex-column">
-              <h5>Empresarial</h5>
-                  <a href="#">Link1</a>
-                  <a href="#">Link2</a>
+      <div class="container">
+          <div class="row justify-content-around py-4">
+              <div class="col-6 col-md-2">
+                  <img src="imgs/logo-asn.png" class="d-inline" alt="" width="80px">
+              </div>
+              <div class="col-6 col-md-3">
+                  <h5>Empresarial</h5>
+                  <a class="links" href="#">Link1</a><br>
+                  <a class="links" href="#">Link2</a>
+              </div>
+              <div class="col-6 col-md-3">
+                  <h5>Informações</h5>
+                  <a class="links" href="#"> ©asnsedu</a><br>
+                  <a class="links" href="#">Letrus</a>
+              </div>
+              <div class="col-6 col-md-2">
+                  <h5>Mídias</h5>
+                  <a class="links" href="#">@asn_sedu</a>
+              </div>
           </div>
-
-          <div class="d-flex flex-column">
-              <h5>Informações</h5>
-                  <a href="#"> ©asnsedu</a>
-                  <a href="#">Letrus</a>
-          </div>
-      
-
-          <div>
-              <h5>Mídias</h5>
-                  <a href="#">@asn_sedu</a>
-                  
-          </div>
-  </div>
-
+      </div>
   </footer>
-
 
   
       <script>
@@ -171,6 +158,26 @@
 
         // Adiciona evento de clique à logo
         logo.addEventListener('click', moveLogo);
+
+        if (window.innerWidth <= 768){
+          function moveLogo() {
+            if (!isLogoMoved) {
+                // Move para a direita
+                logo.style.transform = 'translateX(500px)';
+                hiddenTitle.style.opacity = '1';
+                
+            } else {
+                // Retorna ao estado original
+                logo.style.transform = 'none';
+                hiddenTitle.style.opacity = '0';
+            }
+            // Alterna o estado
+            isLogoMoved = !isLogoMoved;
+        }
+
+        // Adiciona evento de clique à logo
+        logo.addEventListener('click', moveLogo);
+        }
       </script>
     <script>
         // Detecta o início do toque
