@@ -9,6 +9,7 @@
 body, html{
     height: 100vh;
     overflow-x: hidden;
+    background: linear-gradient(to top , #2424ff, #0094FF);
 
 }
 
@@ -16,12 +17,16 @@ html{
     scroll-behavior: smooth;
 }
 
+a{
+    color: #F5F5F5;
+}
+
 ::-webkit-scrollbar{
     display: none;
 }
 
 .navbar{
-    background-color: #0C0CE9;
+    background-color: #0094FF;
     border-bottom: 4px solid #FFC837;
     display: flex;
     justify-content: center;
@@ -31,7 +36,7 @@ html{
 }
 
 #navbarNav{
-    text-align: center;
+   padding-left: 15%;
 }
 
 #ele{
@@ -150,6 +155,16 @@ h5{
     background-color: #0C0CE9;
     padding: 1% ;
     z-index: 10;
+    
+}
+
+.text-size{
+    font-size: 12px;
+}
+
+.text-size-h5{
+    font-size: 16px;
+    margin-right: 5%;
 }
 
 .links{
