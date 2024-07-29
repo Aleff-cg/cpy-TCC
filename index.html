@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./srcs/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
     <title>Document</title>
-</head>
-<body>
-
     <style>
         .reference-card {
             transition: transform 0.3s ease, width 0.3s ease;
@@ -26,15 +23,38 @@
         }
 
     </style>
+</head>
+<body>
 
-    <header class="p-3 " id="header">
-        <div  class="d-flex flex-row justify-content-around align-items-center">
-            <img src="./logo-asn.png" alt="" width="100px" id="logo">
-            <h1 class="d-inline ">ASN SEDU</h1>
-            <a href="./eletivas.html" class="btn-grad">LOGIN</a>
+    
+
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./imgs/logo-asn.png" width="90" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">VOLTAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ELETIVAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TUTORIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">SOBRE</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      
-      </header>
+    </nav>
 
     
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -45,13 +65,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="./carousel-1.jpg" alt="First slide">
+                <img class="d-block w-100" src="./imgs/carousel-1.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="./carousel-1.jpg" alt="Second slide">
+                <img class="d-block w-100" src="imgs/carousel-1.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="./carousel-1.jpg" alt="Third slide">
+                <img class="d-block w-100" src="imgs/carousel-1.jpg" alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -66,7 +86,7 @@
 
     <div class="bg-light p-5" id="references" >
         <div class="d-flex justify-content-center">
-            <img src="./logo-asn.png" alt="" class="logo-references">
+            <img src="/imgs/logo-asn.png" alt="" class="logo-references">
         </div>
         <h1 class="text-center" style="color: #000;" id="text-references">SOMOS REFERÊNCIA EM:</h1>
     
@@ -150,7 +170,7 @@
 
     <footer class="" id="rodape">
         <div class="d-flex justify-content-around">
-            <img src="./logo-asn.png" class="d-inline" alt="" width="80px">
+            <img src="imgs/logo-asn.png" class="d-inline" alt="" width="80px">
             <div class="d-flex flex-column">
                 <h5>Empresarial</h5>
                     <a href="#">Link1</a>
@@ -173,6 +193,26 @@
 
     </footer>
 
+    <script>
+        // Função para ajustar o tamanho dos cards conforme o scroll
+        function adjustCardSize() {
+            const cards = document.querySelectorAll('.reference-card');
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                // Verifica se o card está visível na janela
+                if (rect.top < windowHeight && rect.bottom >= 0) {
+                    card.classList.remove('small-card');
+                } else {
+                    card.classList.add('small-card');
+                }
+            });
+        }
+    
+        // Chama a função de ajuste quando a página é carregada e quando houver scroll
+        document.addEventListener('DOMContentLoaded', adjustCardSize);
+        window.addEventListener('scroll', adjustCardSize);
+    </script>
 
     <script>
         // Detecta o início do toque
